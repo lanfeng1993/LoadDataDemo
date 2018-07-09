@@ -1,0 +1,23 @@
+<template name = "articles">
+  <view class = "article-info-container">
+    <view class = "article-container" bindtap='viewDetail' data-index='{{index}}' data-id='{{item.id}}' data-arrayidx = '{{dataArrayIndex}}'>
+      <text class = "title">{{item.title}}</text>
+      <text class = "author">{{item.author}}/{{item.dynasty}}</text>
+    </view>
+    <view class = "icon-container" bindtap='likeTap' data-index='{{index}}' data-id='{{item.id}}' data-arrayidx = '{{dataArrayIndex}}'>
+      <!--点赞-->
+      <image class = "icon" mode='aspectFill' src='/static/icons/ic_like.png'></image>
+      <text>{{item.like_times}}</text>
+    </view>
+    <view class = "icon-container" bindtap='shareTap' data-index='{{index}}' data-id='{{item.id}}' data-arrayidx = '{{dataArrayIndex}}'>
+      <!--分享-->
+      <image class = "icon" mode='aspectFill' src='/static/icons/ic_share.png'></image>
+      <text>{{item.share_times}}</text>
+    </view>
+    <view class = "icon-container" bindtap='viewDetail' data-index='{{index}}' data-id='{{item.id}}' data-arrayidx = '{{dataArrayIndex}}'>
+      <!--箭头-->
+      <image class = "icon" mode='aspectFill' src='/static/icons/ic_arrow_right.png'></image>
+    </view>
+  </view>
+  <view class="split-line"></view>
+</template>

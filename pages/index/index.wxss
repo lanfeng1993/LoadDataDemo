@@ -1,0 +1,17 @@
+/**index.wxss**/
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container navigator {
+  width:70%;
+  height:80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  color:#fff;
+  background-color: #2CAEE9;
+  border-radius:10rpx;
+  margin-bottom: 30rpx;
+}

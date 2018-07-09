@@ -1,0 +1,17 @@
+/**app.wxss**/
+/**悬浮按钮**/
+.hover-btn {
+  position:fixed;
+  z-index:9;
+  bottom:20rpx;
+  width:100rpx;
+  height:100rpx;
+  font-size:20rpx;
+  color:#fff;
+  line-height:100rpx;
+  text-align:center;
+  border-radius:50rpx;
+}
+
+/**引入模版中使用的css**/
+@import "/pages/template/articles.wxss"

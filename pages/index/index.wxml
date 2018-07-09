@@ -1,0 +1,6 @@
+<!--index.wxml-->
+
+<view class="container">
+  <navigator url="/pages/normalLoading/normalLoading">普通加载</navigator>
+  <navigator url="/pages/enhancedLoading/enhancedLoading">增强加载</navigator>
+</view>

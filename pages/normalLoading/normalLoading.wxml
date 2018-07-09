@@ -1,0 +1,27 @@
+<!--pages/normalLoading/normalLoading.wxml-->
+<import src="../template/articles.wxml"/>
+
+<scroll-view scroll-y="true" style = "height:100%;position: relative;" scroll-into-view="{{toView}}" scroll-with-animation = "true">
+  <view id = "top"></view>
+  <block wx:for="{{articles}}">
+    <template is = "articles" data='{{item:item,index:index}}'/> <!--将item和index都传到模版里去，不然模版中获取不到index-->
+  </block>
+  <view id = "bottom"></view>
+</scroll-view>
+
+
+
+<view bindtap = "scrollToView" class = "hover-btn" style = "left:20rpx;background-color:rgba(44,174,233,0.5);" data-mark="top">
+    去顶部
+</view>
+
+<view bindtap = "loadMoreData" class = "hover-btn" style = "left:325rpx;background-color:rgba(44,174,233,0.7);">
+    加载更多
+</view>
+
+<view bindtap = "scrollToView" class = "hover-btn"style = "right:20rpx;background-color:rgba(44,174,233,0.5);" data-mark="bottom">
+    去底部
+</view>
+
+
+

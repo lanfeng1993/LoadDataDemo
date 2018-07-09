@@ -1,0 +1,13 @@
+<!--pages/article/article.wxml-->
+
+<view style = "display:flex;flex-direction:column;margin:30rpx;">
+  <view class = "title" style = "width:100%;text-align:center;height:80rpx;line-height:80rpx;">
+    {{article.title}}
+  </view>
+  <view class = "author" style = "width:100%;text-align:center;height:80rpx;line-height:20rpx;">
+    {{article.author}}/{{article.dynasty}}
+  </view>
+  <view style = "">
+    <text>{{article.article}}</text>
+  </view>
+</view>

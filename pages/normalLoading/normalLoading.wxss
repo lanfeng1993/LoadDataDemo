@@ -1,0 +1,5 @@
+/* pages/normalLoading/normalLoading.wxss */
+/* 注意如果不设置 page 会造成跳转无效，另外，如果页面中存在有元素使用 z-index 时，page需要设置 position : relative; 才能响应*/
+page{
+  height:100%
+}
